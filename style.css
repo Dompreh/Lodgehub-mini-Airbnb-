@@ -1,0 +1,846 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s all linear;
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/banner-2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.nav2{
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  background: #fff;
+}
+.nav2 .navLinks li a {
+  color: #000;
+}
+.nav2 .logo{
+color: #000;
+}
+.nav2 .register-btn{
+  color: #fff;
+  background: #000;
+}
+.nav2 .register-btn:hover{
+  transform: scale(0.96);
+}
+
+.navLinks li {
+  display: inline-block;
+  list-style: none;
+}
+.navLinks li a {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px 30px;
+  font-size: 18px;
+}
+.logo {
+    font-size: 3vw;
+    color: #fff;
+}
+.logo i{
+    font-size: 2vw;
+    transform: rotate(180deg);
+    transform: rotateX(180deg);
+}
+.logo i:hover{
+    transform: rotateY(180deg);
+}
+.register-btn {
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14;
+}
+.register-btn:hover {
+  color: #fff;
+  background: #000;
+}
+
+.container {
+  padding: 0 7%;
+}
+.header h1 {
+  color: #fff;
+  font-size: 4vw;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 20%;
+}
+
+.searchBar {
+  background: #fff;
+  margin: 30px auto;
+  width: 70%;
+  padding: 6px 10px 6px 30px;
+  border-radius: 50px;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.searchBar form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.searchBar form input {
+  display: block;
+  margin: 5px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.searchBar form button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: #ff5361;
+  cursor: pointer;
+}
+.searchBar form button img {
+  width: 14px;
+  margin-top: 5px;
+}
+.searchBar form button:hover img {
+  transform: scale(1.1);
+}
+.location-label {
+  flex: 1;
+}
+
+.searchBar form label {
+  font-weight: 600;
+}
+.extitle {
+  font-size: 2.2vw;
+  margin: 50px 0 20px;
+  color: #333;
+  font-weight: 600;
+}
+.exclusives {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+.exclusives img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.exclusives img:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.exclusives div {
+  position: relative;
+}
+.exclusives span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.trending {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.trending div img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.trending div img:hover {
+  transform: scale(0.9);
+}
+.trending h3 {
+  font-weight: 600;
+  margin-top: 10px;
+}
+.cta {
+  margin: 80px 0;
+  background-image: linear-gradient(to right, #3f2321, transparent),
+    url(images/banner.png);
+  padding: 5%;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  border-radius: 10px;
+}
+.cta h3 {
+  font-size: 4vw;
+  line-height: 5.3vw;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.cta p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.cta-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #ff5361;
+  padding: 12px 30px;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.cta-btn:hover {
+  transform: scale(0.96);
+}
+
+.stories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.stories div img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.stories div {
+  position: relative;
+  text-align: center;
+}
+.stories div p {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 26px;
+}
+
+.start-btn {
+  text-decoration: none;
+  width: 80%;
+  max-width: 300px;
+  margin: 60px auto;
+  color: white;
+  padding: 15px;
+  border-radius: 30px;
+  text-align: center;
+  background: #ff5361;
+  font-size: 20px;
+  display: block;
+}
+.start-btn:hover {
+  transform: scale(0.96);
+}
+.about-msg {
+  margin: 80px 0;
+  text-align: center;
+  color: #333;
+  font-size: 17px;
+}
+
+.about-msg h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 500;
+}
+.about-msg p {
+  font-size: 16px;
+}
+
+footer {
+  margin: 80px 0 10px;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  font-size: 22px;
+  margin: 0 10px;
+  color: #999;
+}
+footer a i:hover{
+    transform: rotateY(180deg);
+}
+footer a i.ig {
+  color: #8a3ab9;
+}
+footer a i.fb {
+  color: #3b5998;
+}
+footer a i.link {
+    color: #3b5998;
+  }
+footer a i.tt {
+  color: #00acee;
+}
+footer hr{
+margin: 20px 0;
+color: #999;
+width: 100%;
+height: 1px;
+}
+footer p{
+    padding-bottom: 15px;
+    letter-spacing: 1.2px;
+    font-size: 18px;
+}
+.active{
+    position: relative;
+}
+.active::after{
+    content: '';
+    background: #fff;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -7.5px;
+    border-radius: 2px;
+}
+.nav2 .active::after{
+  background: #000;
+}
+nav .fa-bars{
+display: none;
+}
+
+.list-container{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.left-col{
+  flex-basis: 68%;
+}
+.right-col{
+  flex-basis: 25%;
+}
+.left-col h1{
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+}
+.house{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 0;
+border-top: 1px solid #ccc;
+}
+.house-img{
+  flex-basis: 40%;
+}
+.house-info{
+  flex-basis: 58%;
+  color: #555;
+}
+.house-info h3{
+  font-size: 22px;
+  margin: 4px 0;
+  color: #333;
+  font-weight: 600;
+}
+.house-info i{
+color: #ffe234;
+
+}
+
+.house-img img{
+  width: 100%;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.house-img img:hover{
+  transform: scale(0.95);
+  overflow: hidden;
+}
+.house-price{
+  text-align: right;
+}
+.house-price h3{
+  font-size: 20px;
+  color: #333;
+}
+.house-price span{
+  font-size: 16px;
+}
+.sidebar{
+  border: 1px solid #999;
+  margin-top: 30px;
+  padding: 20px 30px;
+  border-radius: 12px;
+}
+.filter{
+  display: flex;
+  align-items: center;
+  color: #555;
+  margin: 10px 0;
+}
+.filter p{
+ flex:1; 
+}
+.filter input{
+  margin-right: 15px;
+  cursor: pointer;
+}
+.sidebar-links{
+  text-align: right;
+  margin: 20px 0;
+}
+.sidebar-links a{
+text-decoration: none;
+}
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+.pagination span{
+margin: 10px 8px;
+width: 40px;
+height: 40px;
+line-height: 40px;
+border-radius: 50%;
+text-align: center;
+cursor: pointer;
+}
+.current{
+  background: #000;
+  color: white;
+}
+.current:hover{
+  transform: scale(0.96);
+}
+.pagination img{
+  width: 14px;
+  margin:10px 20px ;
+}
+.right-arrow{
+  transform: rotate(180deg);
+}
+
+.house-details{
+  padding: 0 12%;
+}
+.houseText{
+  margin-top: 50px;
+}
+.houseText h1{
+  font-weight: 600;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px 0;
+}
+.row span:nth-child(even){
+margin: 0 20px;
+}
+.row span:nth-child(odd){
+  font-weight: 600;
+}
+.row i{
+ color: #ffe234;
+ font-size: 16px;
+}
+.gallery{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 'first first . .' 'first first . .';
+  margin: 20px 0;
+}
+.gallery div img{
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+}
+.galleryImg1{
+  grid-area: first;
+}
+.small-details h2{
+  font-weight: 600;
+}
+.small-details h4{
+  text-align: right;
+  font-weight: 600;
+  font-size: 22px;
+}
+.line{
+  background: #ccc;
+  width: 100%;
+  border: 0;
+  height: 1px;
+ max-width: 800px;
+ margin: 20px;
+}
+.house-form{
+  margin: 30px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 50px;
+  border-radius: 8px;
+}
+.house-form label{
+  display: block;
+}
+.house-form div{
+  padding: 30px;
+}
+.house-form input{
+border: none;
+width: 100%;
+outline: none;
+}
+.house-form button{
+  width: 200px;
+  background:#ff5361;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 10px 0px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.guest-field{
+  flex: 1;
+}
+.house-form button:hover{
+  transform: scale(0.96);
+}
+.details-list{
+  list-style: none;
+  margin: 50px 0;
+
+}
+.details-list li{
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #333;
+  position: relative;
+}
+.details-list li span{
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+}
+.details-list li i{
+  position: absolute;
+  top: 4%;
+  left: -40px;
+  cursor: pointer;
+}
+.details-list li i:hover{
+color: #ff5361;
+}
+.home-desc{
+  max-width: 700px;
+  margin: 50px 0;
+}
+.map{
+  padding: 50px 0;
+}
+.map iframe{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.map h2{
+  margin-bottom:20px ;
+  font-weight: 500;
+}
+.map h3{
+  font-size: 16px;
+  font-weight: 500;
+}
+.host{
+  display: flex;
+  align-items: center;
+
+}
+.host img{
+  margin-right: 30px;
+  width: 80px;
+  border-radius: 50%;
+}
+.host i{
+  color: #ffe234;
+}
+.host h2{
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+a.contactInfo{
+  display: inline-block;
+  margin: 40px 0 40px 120px;
+  padding: 15px 50px;
+  border: 1px solid #ff5361;
+  border-radius: 8px;
+  text-decoration: none;
+
+}
+a.contactInfo:hover{
+  transform: scale(0.96);
+}
+
+
+
+
+
+@media (max-width:985px){
+    nav{
+        padding:20px 5% ;
+    }
+    .navLinks li a {
+        font-size: 16px;
+        margin: 10px 15px;
+    }
+    .header h1 {
+        padding-top: 40%;
+    }
+}
+@media (max-width:880px){
+    .navLinks li a {
+        margin: 10px 10px;
+    }
+    .extitle{
+        font-size: 5.5vw;
+    }
+    .stories div p {
+        font-size: 22px;
+      }
+      .logo{
+        font-size: 2.8vw;
+      }
+}
+@media (max-width:805px){
+  .list-container{
+    margin-top: 150px;
+  }
+  .right-col, .left-col, .house-img, .house-info{
+    flex-basis: 100%;
+  }
+  .house-info i{
+    font-size: 16px;
+  }
+  .pagination span {
+    margin: 10px 2px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+}
+    .logo{
+        position: fixed;
+        top: 4%;
+        left: 7%;
+        font-size: 4vw;
+    }  
+    .logo i{
+        font-size: 3.5vw;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: inline-block;
+        width: 100%;
+        background: #000;
+        padding: 100px 6% 0;
+        text-align: right;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    }
+    nav .navLinks li{
+        margin: 10px 0;
+        display: block;
+    }
+    .register-btn{
+        margin: 15px 0 30px;
+        display: inline-block;
+    }
+    .header h1 {
+        padding-top: 60%;
+        font-size: 6vw;
+    }
+    nav .fa-bars{
+        display: block;
+        color: #fff;
+        top: 4%;
+        right: 7%;
+        font-size: 28px;
+        position: fixed;
+        cursor: pointer;
+    }
+    .nav2 .fa-bars{
+      color: #000;
+      cursor: pointer;
+    }
+    .active::after{
+        width: 25%;
+        left: -35%;
+        transform: translate(0,50%);
+        bottom: 50%;
+    }
+    .hideMenu{
+        max-height: 300px;
+    }
+    .fa-times{
+        transform: rotate(180deg);
+    }
+    .house-details{
+      margin-top: 150px;
+    }
+}
+
+@media (max-width:550px){
+    .stories div p {
+      font-size: 20px;
+    }
+    .logo{
+        position: fixed;
+        top: 4%;
+        left: 7%;
+        font-size: 4.5vw;
+    }  
+    .logo i{
+        font-size: 3.5vw;
+    }
+    .gallery {
+      grid-template-areas: 'first first ' '. .' '. .'; 
+  }
+}
+@media (max-width:450px){
+    .searchBar{
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px 10px 30px;
+        border-radius: 5px;
+        position: relative;
+    }
+    .left-col h1 {
+      font-size:24px;
+  }
+  .house-info h3 {
+    font-size: 20px;
+  }
+    .header h1 {
+        padding-top: 150px;
+        font-size: 7vw;
+    }
+    .searchBar form{
+        display: block;
+    }
+    .searchBar form input{
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .searchBar form button{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+    }
+    .about-msg{
+        font-size: 14px;
+    }
+    .cta{
+      padding: 15% 5%;  
+    }
+    .cta h3{
+        font-size: 7vw;
+        line-height: 8vw;
+    }
+    .cta p{
+        font-size: 14px;
+    }
+    .cta-btn{
+        padding: 6px 15px;
+        border-radius: 4px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .small-details h2 {
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  .small-details h4{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .house-form{
+    padding: 10px 30px;
+  }
+  .house-form div{
+    width: 100%;
+    padding: 20px 0;
+  }
+  .house-form input{
+    border-bottom: 1px solid #555;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  .house-form button{
+    margin: 10px 15px 0 0;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  .house-details {
+    padding: 0 7%;
+}
+}
+@media (max-width:380px){
+  .host{
+    display: block;
+    line-height: 28px;
+  }
+  a.contactInfo{
+    margin: 40px 0;
+  }
+}
+
